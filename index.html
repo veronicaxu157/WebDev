@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta tags that help browsers optimize content, and tell search engines additional information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of website displayed on the browser tab-->
+    <title>Restaurant Website</title>
+
+    <!-- Links our CSS file to this webpage-->
+    <link type="text/css" rel="stylesheet" href="index.css">
+
+    <!-- Uses Google Fonts to load the two fonts we will be using, ensuring everyone has access to the fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- New HTML code will be written here-->
+    <div class="logo">
+        <img src="assets/logo.svg"/>
+        <h1>Veronica's Restaurant</h1>
+    </div>
+    <p class="description">
+        Welcome to my restaurant! You can view the menu below!</p>
+    <div class="grid-container">
+        <div class="menu-item">
+            <img src="/assets/hamburger.jpg"/>
+            <h2 class="menu-item-title">Hamburger</h2>
+            <h5 class="menu-item-price">$15</h5>
+            <p class="menu-item-description">Our deliciously hand-crafted hamburger served with a side of french fries.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="/assets/chicken.jpg"/>
+            <h2 class="menu-item-title">Chicken Tenders</h2>
+            <h5 class="menu-item-price">$15</h5>
+            <p class="menu-item-description">Crispy chicken tenders with your choice of sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="/assets/salad.jpg"/>
+            <h2 class="menu-item-title">Salad</h2>
+            <h5 class="menu-item-price">$10</h5>
+            <p class="menu-item-description">Fresh greens, tomatoes, and olives.</p>
+        </div>
+    </div>
+<button>Show Address</button>
+</body>
+<script>
+    let button = document.getElementsByTagName("button")[0];
+    button.addEventListener("click",() => {alert("123 Main Street")});
+</script>
+</html>
